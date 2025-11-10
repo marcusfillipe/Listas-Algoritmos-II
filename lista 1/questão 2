@@ -1,0 +1,15 @@
+
+
+    
+#include <stdio.h>
+
+int DataPorExtenso(int dia, int mes, int ano) {
+  
+    char *meses[] = {
+        "janeiro", "fevereiro", "marco", "abril", "maio", "junho",
+        "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"
+    };
+
+   
+    printf("%d de %s de %d\n", dia, meses[mes - 1], ano);
+}

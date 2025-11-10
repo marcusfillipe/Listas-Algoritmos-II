@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+float calculaMedia(float n1, float n2, float n3, char tipo) {
+    float media;
+
+    if (tipo == 'A' || tipo == 'a') {
+        media = (n1 + n2 + n3) / 3.0;
+    } 
+    else if (tipo == 'P' || tipo == 'p') {
+        media = (n1 * 5 + n2 * 3 + n3 * 2) / (5 + 3 + 2);
+    } 
+    else {
+        printf("Tipo invalido! Use 'A' ou 'P'.\n");
+        media = 0;
+    }
+
+    return media;
+}

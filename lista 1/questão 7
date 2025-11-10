@@ -1,0 +1,6 @@
+#include <stdio.h>
+
+float celsiusParaFahrenheit(float celsius) {
+    float fahrenheit = (celsius * 9.0 / 5.0) + 32.0;
+    return fahrenheit;
+}

@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+float operacao(float a, float b, char simbolo) {
+    switch(simbolo) {
+        case '+': return a + b;
+        case '-': return a - b;
+        case '*': return a * b;
+        case '/': return (b != 0) ? a / b : 0; // evita divisão por zero
+        default:
+            printf("Símbolo inválido!\n");
+            return 0;
+    }
+}

@@ -1,0 +1,8 @@
+#include <stdio.h>
+#include <math.h>
+
+float volumeEsfera(float raio) {
+    float pi = 3.141592;
+    float volume = (4.0 * pi * pow(raio, 3)) / 3.0;
+    return volume;
+}

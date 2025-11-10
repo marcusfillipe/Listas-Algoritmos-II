@@ -1,0 +1,8 @@
+#include <stdio.h>
+#include <math.h>
+
+float volumeCilindro(float raio, float altura) {
+    float pi = 3.141592;
+    float volume = pi * pow(raio, 2) * altura;
+    return volume;
+}

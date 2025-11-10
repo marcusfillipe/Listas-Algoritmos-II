@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int triangulo(float a, float b, float c) {
+    return (a + b > c && a + c > b && b + c > a);
+}
+
+int tipo_triangulo(float a, float b, float c) {
+    if (!eh_triangulo(a, b, c)) {
+        printf("Não forma um triângulo.\n");
+        return;
+    }
+    if (a == b && b == c)
+        printf("Triângulo equilátero.\n");
+    else if (a == b || a == c || b == c)
+        printf("Triângulo isósceles.\n");
+    else
+        printf("Triângulo escaleno.\n");
+}
